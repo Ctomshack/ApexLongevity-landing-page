@@ -22,7 +22,7 @@ export default function Header() {
                 <span className="sr-only">Apex Longevity</span>
                 <Image
                   className="w-auto h-8 sm:h-10"
-                  src='/../public/ApexLogoFull.png'
+                  src='/../public/FullLogo.png'
                   alt=""
                   height={65}
                   width={200}

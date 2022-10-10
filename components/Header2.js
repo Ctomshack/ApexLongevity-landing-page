@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import { ImCross } from 'react-icons/Im';
-import { BsArrowRightShort } from 'react-icons/Bs';
+import { ImCross } from 'react-icons/im';
+import { BsArrowRightShort } from 'react-icons/bs';
 
 export default function Header2() {
   return (
@@ -29,7 +29,7 @@ export default function Header2() {
         <div className="relative lg:grid lg:grid-cols-2 lg:gap-x-12">
           <div className="block lg:col-span-1">
                 <Image className='rounded-md shadow'
-                src='/../public/TMA_5224.jpg' 
+                src='/../public/Header2_5224.jpg' 
                 width='952'
                 height='640'
                 alt='patients at front desk'
