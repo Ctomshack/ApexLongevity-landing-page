@@ -1,4 +1,5 @@
 import { LifebuoyIcon, NewspaperIcon, PhoneIcon } from '@heroicons/react/24/outline'
+import Image from 'next/image'
 
 const supportLinks = [
   {
@@ -30,10 +31,12 @@ export default function Benefits2() {
       {/* Header */}
       <div className="relative pb-32 bg-gray-800">
         <div className="absolute inset-0">
-          <img
+          <Image
             className="object-cover w-full h-full"
             src="https://images.unsplash.com/photo-1525130413817-d45c1d127c42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&q=60&&sat=-100"
             alt=""
+            layout='fill'
+            objectFit='cover'
           />
           <div className="absolute inset-0 bg-gray-800 mix-blend-multiply" aria-hidden="true" />
         </div>
