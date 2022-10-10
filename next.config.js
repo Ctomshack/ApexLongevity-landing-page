@@ -4,11 +4,10 @@ const nextConfig = {
   swcMinify: true,
 }
 
-// module.exports = nextConfig
+module.exports = nextConfig
 
 module.exports = {
   images: {
     domains: ['images.unsplash.com']
-  },
-  nextConfig,
+  }
 }
