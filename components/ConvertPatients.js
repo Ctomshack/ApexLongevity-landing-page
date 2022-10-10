@@ -93,13 +93,13 @@ const stats = [
                   Feel confident offering more wellness care to patients who need it, but may have exhausted their insurance benefits or are uninsured.
                 </p>
                 <p className="pb-6 text-base leading-7 border-b-2 border-gray-100">
-                  Break free from insurance limitations and increase your clinic's bottom line, all while providing wellness care to MORE patients at an affordable rate they can afford.
+                  {`Break free from insurance limitations and increase your clinic's bottom line, all while providing wellness care to MORE patients at an affordable rate they can afford.`}
                 </p>
               </div>
             </div>
               <div className="mt-10">
                 <a href="#" className="text-base font-medium text-apexB">
-                  Learn more about how we're changing the profession
+                  {`Learn more about how we're changing the profession`}
                   <span aria-hidden="true"> &rarr;</span>
                 </a>
               </div>
