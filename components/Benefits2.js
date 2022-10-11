@@ -5,21 +5,21 @@ import React from 'react'
 const supportLinks = [
   {
     name: 'Patients Receive Affordable Chiropractic Care',
-    href: '#',
+    href: '#ContactUs',
     description:
       'Without undercutting or devaluing your services',
     icon: PhoneIcon,
   },
   {
     name: 'Earn More Income',
-    href: '#',
+    href: '#ContactUs',
     description:
       'Make it easier for patients to finish their care plans when their insurance runs out or if they are uninsured',
     icon: LifebuoyIcon,
   },
   {
     name: 'Win-Win Situation',
-    href: '#',
+    href: '#ContactUs',
     description:
       'Patients get discounts for paying out of pocket and your practice earns more income',
     icon: NewspaperIcon,

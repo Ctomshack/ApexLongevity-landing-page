@@ -142,7 +142,7 @@ import {
 
           <div className="relative w-1/2 m-auto rounded-md shadow md:w-full lg:w-1/2">
                 <a
-                  href="#"
+                  href="#ContactUs"
                   className="flex items-center justify-center w-full px-8 py-3 mt-12 text-base font-medium text-white duration-300 border border-transparent rounded-md bg-apexB hover:bg-apexG md:py-4 md:px-10 md:text-lg"
                 >
                   Join the Apex Longevity Network for Free Today

@@ -55,7 +55,7 @@ export default function Header2() {
                   <p className="mt-5 text-lg leading-6 text-gray-500">Many doctors do not realize that offering cash discounts to patients can often be illegal.</p>
                   <div className="w-3/4 m-auto rounded-md shadow">
                 <a
-                  href="#"
+                  href="#ContactUs"
                   className="flex items-center justify-center w-full px-8 py-3 mt-12 text-base font-medium text-white duration-300 border border-transparent rounded-md bg-apexB hover:bg-apexG md:py-4 md:px-10 md:text-lg"
                 >
                   Reduce Your Risk Today<BsArrowRightShort size={35} className='mx-1'/>

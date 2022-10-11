@@ -39,8 +39,8 @@ export default function Header() {
                 Sign in
               </a> */}
               <a
-                href="#"
-                className="inline-flex items-center justify-center px-4 py-2 ml-8 text-base font-medium text-white duration-300 border border-transparent rounded-md shadow-sm bg-apexB whitespace-nowrap hover:bg-apexG"
+                href="#ContactUs"
+                className="inline-flex items-center justify-center px-4 py-2 ml-8 text-base font-medium text-white duration-300 border border-transparent rounded-md shadow-sm scroll-smooth bg-apexB whitespace-nowrap hover:bg-apexG"
               >
                 Get Started Today
               </a>
@@ -65,7 +65,7 @@ export default function Header() {
             <div className="mt-10 sm:flex sm:justify-center lg:justify-start">
               <div className="rounded-md shadow">
                 <a
-                  href="#"
+                  href="#ContactUs"
                   className="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-white duration-300 border border-transparent rounded-md bg-apexB hover:bg-apexG md:py-4 md:px-10 md:text-lg"
                 >
                   Get started
@@ -73,7 +73,7 @@ export default function Header() {
               </div>
               <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
                 <a
-                  href="#"
+                  href="#LearnMore"
                   className="flex items-center justify-center w-full px-8 py-3 text-base font-medium duration-300 bg-white border border-transparent rounded-md text-apexB hover:bg-gray-50 md:py-4 md:px-10 md:text-lg"
                 >
                   Learn more

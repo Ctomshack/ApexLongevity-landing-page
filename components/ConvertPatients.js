@@ -99,7 +99,7 @@ const stats = [
               </div>
             </div>
               <div className="mt-10">
-                <a href="#" className="text-base font-medium text-apexB">
+                <a href="#LearnMore" className="text-base font-medium text-apexB">
                   {`Learn more about how we're making chiropractic care more accessible`}
                   <span aria-hidden="true"> &rarr;</span>
                 </a>

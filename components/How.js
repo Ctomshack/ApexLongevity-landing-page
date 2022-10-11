@@ -28,7 +28,7 @@ export default function How() {
             </p>
           </div>
           <a
-            href="#"
+            href="#ContactUs"
             className="inline-flex items-center justify-center w-full px-5 py-3 mt-8 text-base font-medium text-white duration-300 border border-transparent rounded-md bg-apexB hover:bg-apexG sm:mt-10 sm:w-auto xl:mt-0"
           >
             Get started today
