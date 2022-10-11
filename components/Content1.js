@@ -94,7 +94,7 @@ export default function Content1() {
             28 Million Americans have no insurance.
             </p>
             <p className="mt-8 text-xl leading-8 text-gray-500">
-            31 Million Americans hve insurance, but with limited coverage.
+            31 Million Americans have insurance, but with limited coverage.
             </p>
             <p className="mt-8 text-xl leading-8 text-gray-500">
             The RECESSION & INFLATION are forcing people to think harder about spending money on everything - Chiropractic care included.
