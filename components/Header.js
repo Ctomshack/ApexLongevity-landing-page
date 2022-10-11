@@ -85,7 +85,7 @@ export default function Header() {
               <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
                 <a
                   href="#LearnMore"
-                  className="flex items-center justify-center w-full px-8 py-3 text-base font-medium duration-300 bg-white border border-transparent rounded-md text-apexB hover:bg-gray-50 md:py-4 md:px-10 md:text-lg"
+                  className="flex items-center justify-center w-full px-8 py-3 text-base font-medium duration-300 bg-white border border-transparent rounded-md text-apexB hover:bg-gray-100 md:py-4 md:px-10 md:text-lg"
                 >
                   Learn more
                 </a>
