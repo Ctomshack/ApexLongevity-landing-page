@@ -29,18 +29,18 @@ export default function Header() {
                   width={200}
                   priority='true'
                 />
-                <span className="w-auto h-8 sm:h-10 text-{#4f46e5}"></span>
+                {/* <span className="w-auto h-8 sm:h-10 text-{#4f46e5}"></span> */}
               </a>
             </div>
             
-            <div className='flex justify-center gap-8 flex-nowrap sm:ml-24 lg:ml-0 lg:gap-24'>
-            <a href="#LearnMore" className="invisible text-base font-medium text-gray-500 md:flex md:flex-1 lg:w-0 hover:text-gray-900 sm:visible md:visible lg:visible">
+            <div className='flex justify-center gap-8 flex-nowrap sm:ml-24 lg:ml-0 lg:gap-24 lg:w-1/3'>
+            <a href="#LearnMore" className="invisible text-base font-medium text-gray-500 duration-300 md:flex md:flex-1 lg:w-auto hover:text-apexB sm:visible md:visible lg:visible">
                 About
               </a>
-              <a href="#Benefits" className="invisible text-base font-medium text-gray-500 md:flex md:flex-1 lg:w-0 hover:text-gray-900 sm:visible md:visible lg:visible">
+              <a href="#Benefits" className="invisible text-base font-medium text-gray-500 duration-300 md:flex md:flex-1 lg:w-auto hover:text-apexB sm:visible md:visible lg:visible">
                 Benefits
               </a>
-              <a href="#Mission" className="invisible text-base font-medium text-gray-500 md:flex md:flex-1 lg:w-0 hover:text-gray-900 sm:visible md:visible lg:visible flex-nowrap whitespace-nowrap">
+              <a href="#Mission" className="invisible text-base font-medium text-gray-500 duration-300 md:flex md:flex-1 lg:w-auto hover:text-apexB sm:visible md:visible lg:visible flex-nowrap whitespace-nowrap">
                 Our Why
               </a>
             </div>
