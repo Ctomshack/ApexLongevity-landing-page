@@ -10,7 +10,7 @@ const stats = [
   
   export default function ConvertPatients() {
     return (
-      <div className="relative py-16 bg-white sm:py-24">
+      <div className="relative py-16 bg-white sm:py-24" id="Mission">
         <div className="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-2 lg:items-start lg:gap-24 lg:px-8">
           <div className="relative sm:py-16 lg:py-0">
             <div aria-hidden="true" className="hidden sm:block lg:absolute lg:inset-y-0 lg:right-0 lg:w-screen">

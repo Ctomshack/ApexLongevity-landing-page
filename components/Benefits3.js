@@ -65,7 +65,7 @@ import {
   
   export default function Benefits3() {
     return (
-      <div className="py-16 overflow-hidden bg-gray-50 lg:py-24">
+      <div className="py-16 overflow-hidden bg-gray-50 lg:py-24" id='Benefits'>
         <div className="relative max-w-xl px-4 mx-auto sm:px-6 lg:max-w-7xl lg:px-8">
           <svg
             className="absolute hidden transform -translate-x-1/2 left-full -translate-y-1/4 lg:block"
