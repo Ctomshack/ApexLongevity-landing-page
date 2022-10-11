@@ -39,7 +39,7 @@ export default function How() {
             <h2 className="text-lg font-semibold text-apexB">Everything you need</h2>
             <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900">All-in-one platform</p>
             <p className="mt-4 text-lg text-gray-500">
-              Access your admin dashboard to enroll and update patient memberships, receive lifetime customer support via LiveChat, and complete free Apex training videos to ensure your staff is well-equipped for success with Apex Longevity.
+              Access your admin dashboard to enroll and update patient memberships, lifetime customer support, and free training to ensure your staff is well-equipped for success with Apex Longevity.
             </p>
           </div>
           <div className="mt-4 sm:mt-8 md:mt-10 md:grid md:grid-cols-1 md:gap-x-8 xl:col-span-1 xl:mt-0">

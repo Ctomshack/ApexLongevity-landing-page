@@ -45,7 +45,7 @@ export default function Header2() {
                   <p className="mt-5 text-lg leading-6 text-gray-500">However, doctors that do this can face two serious problems:</p>
                   {' '} 
                   <div className='flex items-center gap-2 mt-5 text-lg leading-6 text-gray-500'>
-                    <ImCross size={20}/><p className="mt-5 text-lg leading-6 text-gray-500">They stand to lose a lot fo money on some visits while devaluing their care</p>
+                    <ImCross size={20}/><p className="mt-5 text-lg leading-6 text-gray-500">They stand to lose a lot of money on some visits while devaluing their care</p>
                   </div>
                     {' '} 
                   <div className='flex items-center gap-2 mt-5 text-lg leading-6 text-gray-500'>

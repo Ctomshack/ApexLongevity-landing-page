@@ -8,15 +8,15 @@ const features = [
     icon: CurrencyDollarIcon,
   },
   {
-    name: `Don't State / Federal Insurance Law Violations`,
+    name: `Don't Violate State / Federal Insurance Laws`,
     description:
-      'regarding Dual Fee Schedules, False Claims, Inducement Violations, or Anti-Kickback',
+      'Regarding Dual Fee Schedules, False Claims, Inducement Violations, or Anti-Kickback',
     icon: ScaleIcon,
   },
   {
     name: 'Get FREE marketing',
     description:
-      'to attract more new patients each and every month',
+      'To attract more new patients each and every month',
     icon: BoltIcon,
   },
   {
