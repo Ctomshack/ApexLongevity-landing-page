@@ -14,13 +14,13 @@ const features = [
     icon: ScaleIcon,
   },
   {
-    name: 'Get FREE marketing',
+    name: 'Get FREE Marketing',
     description:
       'To attract more new patients each and every month',
     icon: BoltIcon,
   },
   {
-    name: 'Receive Reminder emails',
+    name: 'Receive Reminder Emails',
     description:
       'To your patients and your practice to ensure all cash paying patients maintain a valid Apex Longevity membership',
     icon: EnvelopeIcon,
