@@ -1,4 +1,5 @@
 import Image from "next/image"
+import React from 'react'
 
 const stats = [
     { label: 'Founded', value: '2021' },
@@ -41,7 +42,7 @@ const stats = [
               <div className="relative pt-64 pb-10 overflow-hidden shadow-xl rounded-2xl">
                 <Image
                   className="absolute inset-0 object-cover w-full h-full"
-                  src='/../public/TMA_5661.jpg'
+                  src='/testimonial.jpg'
                   alt="Doctor providing patient care"
                   layout="fill"
                 />

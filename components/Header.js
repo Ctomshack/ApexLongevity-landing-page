@@ -5,6 +5,7 @@ import {
   PlayIcon,
 } from '@heroicons/react/24/outline'
 import Image from 'next/image'
+import React from 'react'
 
 const callsToAction = [
   { name: 'Watch Demo', href: '#', icon: PlayIcon },
@@ -22,10 +23,11 @@ export default function Header() {
                 <span className="sr-only">Apex Longevity</span>
                 <Image
                   className="w-auto h-8 sm:h-10"
-                  src='/../public/FullLogo.png'
+                  src='/navlogo.png'
                   alt=""
                   height={65}
                   width={200}
+                  priority='true'
                 />
                 <span className="w-auto h-8 sm:h-10 text-{#4f46e5}"></span>
               </a>
@@ -38,7 +40,7 @@ export default function Header() {
               </a> */}
               <a
                 href="#"
-                className="inline-flex items-center justify-center px-4 py-2 ml-8 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-apexB whitespace-nowrap hover:bg-apexG"
+                className="inline-flex items-center justify-center px-4 py-2 ml-8 text-base font-medium text-white duration-300 border border-transparent rounded-md shadow-sm bg-apexB whitespace-nowrap hover:bg-apexG"
               >
                 Get Started Today
               </a>
@@ -64,7 +66,7 @@ export default function Header() {
               <div className="rounded-md shadow">
                 <a
                   href="#"
-                  className="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-white border border-transparent rounded-md bg-apexB hover:bg-apexG md:py-4 md:px-10 md:text-lg"
+                  className="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-white duration-300 border border-transparent rounded-md bg-apexB hover:bg-apexG md:py-4 md:px-10 md:text-lg"
                 >
                   Get started
                 </a>
@@ -72,7 +74,7 @@ export default function Header() {
               <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
                 <a
                   href="#"
-                  className="flex items-center justify-center w-full px-8 py-3 text-base font-medium bg-white border border-transparent rounded-md text-apexB hover:bg-gray-50 md:py-4 md:px-10 md:text-lg"
+                  className="flex items-center justify-center w-full px-8 py-3 text-base font-medium duration-300 bg-white border border-transparent rounded-md text-apexB hover:bg-gray-50 md:py-4 md:px-10 md:text-lg"
                 >
                   Learn more
                 </a>
@@ -87,7 +89,7 @@ export default function Header() {
             alt=""
           /> */}
           <Image
-          src='/../public/image_adobe_express (1).jpeg'
+          src='/header1image.jpeg'
           alt='Apex Longevity Header Image' 
           layout='fill'
           objectFit='cover'

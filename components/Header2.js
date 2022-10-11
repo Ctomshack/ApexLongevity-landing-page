@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { ImCross } from 'react-icons/im';
 import { BsArrowRightShort } from 'react-icons/bs';
+import React from "react"
 
 export default function Header2() {
   return (
@@ -29,7 +30,7 @@ export default function Header2() {
         <div className="relative lg:grid lg:grid-cols-2 lg:gap-x-12">
           <div className="block lg:col-span-1">
                 <Image className='rounded-md shadow'
-                src='/../public/Header2_5224.jpg' 
+                src='/header2.jpg' 
                 width='952'
                 height='640'
                 alt='patients at front desk'
@@ -55,7 +56,7 @@ export default function Header2() {
                   <div className="w-3/4 m-auto rounded-md shadow">
                 <a
                   href="#"
-                  className="flex items-center justify-center w-full px-8 py-3 mt-12 text-base font-medium text-white border border-transparent rounded-md bg-apexB hover:bg-apexG md:py-4 md:px-10 md:text-lg"
+                  className="flex items-center justify-center w-full px-8 py-3 mt-12 text-base font-medium text-white duration-300 border border-transparent rounded-md bg-apexB hover:bg-apexG md:py-4 md:px-10 md:text-lg"
                 >
                   Reduce Your Risk Today<BsArrowRightShort size={35} className='mx-1'/>
                 </a>

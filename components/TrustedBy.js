@@ -1,3 +1,5 @@
+import React from "react"
+
 export default function TrustedBy() {
     return (
       <div className="pt-12 bg-gray-50 sm:pt-16">

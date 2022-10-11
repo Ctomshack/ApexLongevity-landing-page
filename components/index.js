@@ -1,0 +1,11 @@
+export { default as Benefits1 } from './Benefits1';
+export { default as Benefits2 } from './Benefits2';
+export { default as Benefits3 } from './Benefits3';
+export { default as ContactUs } from './ContactUs';
+export { default as Content1 } from './Content1';
+export { default as ConvertPatients } from './ConvertPatients';
+export { default as Footer } from './Footer';
+export { default as Header } from './Header';
+export { default as Header2 } from './Header2';
+export { default as How } from './How';
+export { default as TrustedBy } from './TrustedBy';

@@ -1,4 +1,6 @@
-  export default function Footer() {
+import React from "react"
+
+ export default function Footer() {
     return (
       <footer className="bg-gray-800">
         <div className="px-4 py-8 mx-auto overflow-hidden max-w-7xl sm:px-6 lg:px-8">

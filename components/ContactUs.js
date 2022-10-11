@@ -13,6 +13,7 @@
   ```
 */
 import { EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline'
+import React from 'react'
 
 export default function ContactUs() {
   return (
@@ -110,7 +111,7 @@ export default function ContactUs() {
               <div>
                 <button
                   type="submit"
-                  className="inline-flex justify-center px-6 py-3 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-apexB hover:bg-apexB focus:outline-none focus:ring-2 focus:ring-apexB focus:ring-offset-2"
+                  className="inline-flex justify-center px-6 py-3 text-base font-medium text-white duration-300 border border-transparent rounded-md shadow-sm bg-apexB hover:bg-apexB focus:outline-none focus:ring-2 focus:ring-apexB focus:ring-offset-2"
                 >
                   Submit
                 </button>

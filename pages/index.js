@@ -18,7 +18,7 @@ export default function Home() {
       <Head>
         <title>Apex Longevity</title>
         <meta name="description" content="Apex Longevity - Discount Medical Plan Organization" />
-        <link rel="icon" href="/ApexLogo.png" />
+        <link rel="icon" href="/apexlogo.png" />
       </Head>
 
       <div>

@@ -1,5 +1,6 @@
 import { LifebuoyIcon, NewspaperIcon, PhoneIcon } from '@heroicons/react/24/outline'
 import Image from 'next/image'
+import React from 'react'
 
 const supportLinks = [
   {
@@ -67,7 +68,7 @@ export default function Benefits2() {
                 <p className="mt-4 text-base text-gray-500">{link.description}</p>
               </div>
               <div className="p-6 rounded-bl-2xl rounded-br-2xl bg-gray-50 md:px-8">
-                <a href={link.href} className="text-base font-medium text-apexB hover:text-apexG">
+                <a href={link.href} className="text-base font-medium duration-300 text-apexB hover:text-apexG">
                   Contact us<span aria-hidden="true"> &rarr;</span>
                 </a>
               </div>

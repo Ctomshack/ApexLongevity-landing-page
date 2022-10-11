@@ -1,4 +1,5 @@
 import { BoltIcon, EnvelopeIcon, GlobeAltIcon, ScaleIcon, CurrencyDollarIcon } from '@heroicons/react/24/outline'
+import React from 'react'
 
 const features = [
   {
@@ -7,9 +8,9 @@ const features = [
     icon: CurrencyDollarIcon,
   },
   {
-    name: `No More State / Federal Insurance Law Violations`,
+    name: `Don't State / Federal Insurance Law Violations`,
     description:
-      'regarding dual fee schedules',
+      'regarding Dual Fee Schedules, False Claims, Inducement Violations, or Anti-Kickback',
     icon: ScaleIcon,
   },
   {
@@ -19,7 +20,7 @@ const features = [
     icon: BoltIcon,
   },
   {
-    name: 'Reminder emails',
+    name: 'Receive Reminder emails',
     description:
       'To your patients and your practice to ensure all cash paying patients maintain a valid Apex Longevity membership',
     icon: EnvelopeIcon,
