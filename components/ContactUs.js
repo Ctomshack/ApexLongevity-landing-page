@@ -22,16 +22,22 @@ import SuccessMessage from './SuccessMessage';
 export default function ContactUs() {
 
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
-  const [formData, setFormData] = useState({fullName: '', email: '', phone: '', message: ''})
+  const [fullName, setFullName] = useState("")
+  const [email, setEmail] = useState("")
+  const [phone, setPhone] = useState("")
+  const [message, setMessage] = useState("")
 
-  const clearForm = () => {
-    setFormData({fullName: '', email: '', phone: '', message: ''})
-  }
-
-//   const handleChange = (e) => {
-//     setFormData({ ...formData,
-//       [e.target.name] : e.target.value, })
-// }
+  const handleChange = (event) => {
+    event.target.name=="fullName" 
+    ? setFullName(event.target.value)
+    : event.target.name=="email" 
+    ? setEmail(event.target.value)
+    : event.target.name=="message" 
+    ? setMessage(event.target.value)
+    : event.target.name=="phone" 
+    ? setPhone(event.target.value)
+    : console.log("error")
+  };
 
   const form = useRef();
 
@@ -41,6 +47,10 @@ export default function ContactUs() {
     emailjs.sendForm('service_emnd3ej', 'template_rn4dbyp', form.current, '2SNUerfRdY2TlEpcU')
       .then((result) => {
         // clearForm();
+        setFullName("")
+      setMessage("")
+      setEmail("")
+      setPhone("")
         setShowSuccessMessage(true);
           setTimeout(() => {
             setShowSuccessMessage(false);
@@ -51,20 +61,6 @@ export default function ContactUs() {
       });
   };
 
-  // async function handleSubmit(e) {
-  //   e.preventDefault();
-  //   const formData = {};
-  //   Array.from(e.currentTarget.elements).forEach(field => {
-  //     if (!field.name) return;
-  //     formData[field.name] = field.value;
-  //     console.log(formData)
-  //   });
-
-  //   fetch('/api/mail', {
-  //     method: 'post',
-  //     body: JSON.stringify(formData)
-  //   })
-  // }
 
   return (
     <div className="relative bg-white" id='ContactUs'>
@@ -117,6 +113,8 @@ export default function ContactUs() {
                   autoComplete="name"
                   className="block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm focus:border-apexB focus:ring-apexB"
                   placeholder="Full name"
+                  value={fullName}
+                  onChange={(e) => handleChange(e)}
                 />
               </div>
               <div>
@@ -130,6 +128,8 @@ export default function ContactUs() {
                   autoComplete="email"
                   className="block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm focus:border-apexB focus:ring-apexB"
                   placeholder="Email"
+                  value={email}
+                  onChange={(e) => handleChange(e)}
                 />
               </div>
               <div>
@@ -143,6 +143,8 @@ export default function ContactUs() {
                   autoComplete="tel"
                   className="block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm focus:border-apexB focus:ring-apexB"
                   placeholder="Phone"
+                  value={phone}
+                  onChange={(e) => handleChange(e)}
                 />
               </div>
               <div>
@@ -155,7 +157,9 @@ export default function ContactUs() {
                   rows={4}
                   className="block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm focus:border-apexB focus:ring-apexB"
                   placeholder="Message"
-                  defaultValue={''}
+                  // defaultValue={''}
+                  value={message}
+                  onChange={(e) => handleChange(e)}
                 />
               </div>
               <div>
@@ -166,16 +170,6 @@ export default function ContactUs() {
                 >
                   Submit
                 </button>
-
-
-
-
-
-
-
-
-
-
               </div>
             </form>
                 {showSuccessMessage && (
