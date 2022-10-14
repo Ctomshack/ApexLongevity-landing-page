@@ -12,25 +12,41 @@
   }
   ```
 */
-import { EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline'
-import React from 'react'
+import { EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline';
+import React from 'react';
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 export default function ContactUs() {
 
-  async function handleSubmit(e) {
-    e.preventDefault();
-    const formData = {};
-    Array.from(e.currentTarget.elements).forEach(field => {
-      if (!field.name) return;
-      formData[field.name] = field.value;
-      console.log(formData)
-    });
+  const form = useRef();
 
-    fetch('/api/mail', {
-      method: 'post',
-      body: JSON.stringify(formData)
-    })
-  }
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_Gmail', 'template_rzzc2xu', form.current, 'KveSNaQtaqd1cdVHa')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
+
+  // async function handleSubmit(e) {
+  //   e.preventDefault();
+  //   const formData = {};
+  //   Array.from(e.currentTarget.elements).forEach(field => {
+  //     if (!field.name) return;
+  //     formData[field.name] = field.value;
+  //     console.log(formData)
+  //   });
+
+  //   fetch('/api/mail', {
+  //     method: 'post',
+  //     body: JSON.stringify(formData)
+  //   })
+  // }
+
   return (
     <div className="relative bg-white" id='ContactUs'>
       <div className="absolute inset-0">
@@ -70,15 +86,15 @@ export default function ContactUs() {
         </div>
         <div className="px-4 py-16 bg-white sm:px-6 lg:col-span-3 lg:py-24 lg:px-8 xl:pl-12">
           <div className="max-w-lg mx-auto lg:max-w-none">
-            <form onSubmit={handleSubmit} action="#" method="POST" className="grid grid-cols-1 gap-y-6">
+            <form ref={form} onSubmit={sendEmail} action="#" method="POST" className="grid grid-cols-1 gap-y-6">
               <div>
-                <label htmlFor="full-name" className="sr-only">
+                <label htmlFor="fullName" className="sr-only">
                   Full name
                 </label>
                 <input
                   type="text"
-                  name="full-name"
-                  id="full-name"
+                  name="fullName"
+                  id="fullName"
                   autoComplete="name"
                   className="block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm focus:border-apexB focus:ring-apexB"
                   placeholder="Full name"
@@ -126,6 +142,7 @@ export default function ContactUs() {
               <div>
                 <button
                   type="submit"
+                  value="Send"
                   className="inline-flex justify-center px-6 py-3 text-base font-medium text-white duration-300 border border-transparent rounded-md shadow-sm bg-apexB hover:bg-apexG focus:outline-none focus:ring-2 focus:ring-apexB focus:ring-offset-2"
                 >
                   Submit
