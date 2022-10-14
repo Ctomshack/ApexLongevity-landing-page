@@ -16,6 +16,21 @@ import { EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline'
 import React from 'react'
 
 export default function ContactUs() {
+
+  async function handleSubmit(e) {
+    e.preventDefault();
+    const formData = {};
+    Array.from(e.currentTarget.elements).forEach(field => {
+      if (!field.name) return;
+      formData[field.name] = field.value;
+      console.log(formData)
+    });
+
+    fetch('/api/mail', {
+      method: 'post',
+      body: JSON.stringify(formData)
+    })
+  }
   return (
     <div className="relative bg-white" id='ContactUs'>
       <div className="absolute inset-0">
@@ -55,7 +70,7 @@ export default function ContactUs() {
         </div>
         <div className="px-4 py-16 bg-white sm:px-6 lg:col-span-3 lg:py-24 lg:px-8 xl:pl-12">
           <div className="max-w-lg mx-auto lg:max-w-none">
-            <form action="#" method="POST" className="grid grid-cols-1 gap-y-6">
+            <form onSubmit={handleSubmit} action="#" method="POST" className="grid grid-cols-1 gap-y-6">
               <div>
                 <label htmlFor="full-name" className="sr-only">
                   Full name
