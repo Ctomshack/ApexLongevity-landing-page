@@ -12,31 +12,30 @@
   }
   ```
 */
-import { EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline';
-import { CheckCircleIcon, XMarkIcon } from '@heroicons/react/20/solid'
-import React from 'react';
-import { useRef, useState } from 'react';
-import emailjs from '@emailjs/browser';
-import SuccessMessage from './SuccessMessage';
+import { EnvelopeIcon, PhoneIcon } from "@heroicons/react/24/outline";
+import { CheckCircleIcon, XMarkIcon } from "@heroicons/react/20/solid";
+import React from "react";
+import { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
+import SuccessMessage from "./SuccessMessage";
 
 export default function ContactUs() {
-
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
-  const [fullName, setFullName] = useState("")
-  const [email, setEmail] = useState("")
-  const [phone, setPhone] = useState("")
-  const [message, setMessage] = useState("")
+  const [fullName, setFullName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [message, setMessage] = useState("");
 
   const handleChange = (event) => {
-    event.target.name=="fullName" 
-    ? setFullName(event.target.value)
-    : event.target.name=="email" 
-    ? setEmail(event.target.value)
-    : event.target.name=="message" 
-    ? setMessage(event.target.value)
-    : event.target.name=="phone" 
-    ? setPhone(event.target.value)
-    : console.log("error")
+    event.target.name == "fullName"
+      ? setFullName(event.target.value)
+      : event.target.name == "email"
+      ? setEmail(event.target.value)
+      : event.target.name == "message"
+      ? setMessage(event.target.value)
+      : event.target.name == "phone"
+      ? setPhone(event.target.value)
+      : console.log("error");
   };
 
   const form = useRef();
@@ -44,26 +43,34 @@ export default function ContactUs() {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_emnd3ej', 'template_rn4dbyp', form.current, '2SNUerfRdY2TlEpcU')
-      .then((result) => {
-        // clearForm();
-        setFullName("")
-      setMessage("")
-      setEmail("")
-      setPhone("")
-        setShowSuccessMessage(true);
+    emailjs
+      .sendForm(
+        process.env.NEXT_PUBLIC_SERVICE_ID,
+        process.env.NEXT_PUBLIC_TEMPLATE_ID,
+        form.current,
+        process.env.NEXT_PUBLIC_USER_ID
+      )
+      .then(
+        (result) => {
+          // clearForm();
+          setFullName("");
+          setMessage("");
+          setEmail("");
+          setPhone("");
+          setShowSuccessMessage(true);
           setTimeout(() => {
             setShowSuccessMessage(false);
           }, 5000);
           console.log(result.text);
-      }, (error) => {
+        },
+        (error) => {
           console.log(error.text);
-      });
+        }
+      );
   };
 
-
   return (
-    <div className="relative bg-white" id='ContactUs'>
+    <div className="relative bg-white" id="ContactUs">
       <div className="absolute inset-0">
         <div className="absolute inset-y-0 left-0 w-1/2 bg-gray-50" />
       </div>
@@ -72,7 +79,8 @@ export default function ContactUs() {
           <div className="max-w-lg mx-auto">
             <h2 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">{`Let's Work Together`}</h2>
             <p className="mt-3 text-lg leading-6 text-gray-500">
-              Submit the contact form or use one of the below options to get in touch with an Apex Longevity representative today
+              Submit the contact form or use one of the below options to get in
+              touch with an Apex Longevity representative today
             </p>
             <dl className="mt-8 text-base text-gray-500">
               <div>
@@ -85,14 +93,20 @@ export default function ContactUs() {
               <div className="mt-6">
                 <dt className="sr-only">Phone number</dt>
                 <dd className="flex">
-                  <PhoneIcon className="flex-shrink-0 w-6 h-6 text-gray-400" aria-hidden="true" />
+                  <PhoneIcon
+                    className="flex-shrink-0 w-6 h-6 text-gray-400"
+                    aria-hidden="true"
+                  />
                   <span className="ml-3">+1 (877) 712-2739</span>
                 </dd>
               </div>
               <div className="mt-3">
                 <dt className="sr-only">Email</dt>
                 <dd className="flex">
-                  <EnvelopeIcon className="flex-shrink-0 w-6 h-6 text-gray-400" aria-hidden="true" />
+                  <EnvelopeIcon
+                    className="flex-shrink-0 w-6 h-6 text-gray-400"
+                    aria-hidden="true"
+                  />
                   <span className="ml-3">support@apexlongevity.com</span>
                 </dd>
               </div>
@@ -101,7 +115,13 @@ export default function ContactUs() {
         </div>
         <div className="px-4 py-16 bg-white sm:px-6 lg:col-span-3 lg:py-24 lg:px-8 xl:pl-12">
           <div className="max-w-lg mx-auto lg:max-w-none">
-            <form ref={form} onSubmit={sendEmail} action="#" method="POST" className="grid grid-cols-1 gap-y-6">
+            <form
+              ref={form}
+              onSubmit={sendEmail}
+              action="#"
+              method="POST"
+              className="grid grid-cols-1 gap-y-6"
+            >
               <div>
                 <label htmlFor="fullName" className="sr-only">
                   Full name
@@ -172,12 +192,10 @@ export default function ContactUs() {
                 </button>
               </div>
             </form>
-                {showSuccessMessage && (
-          <SuccessMessage />
-        )}
+            {showSuccessMessage && <SuccessMessage />}
           </div>
         </div>
       </div>
     </div>
-  )
+  );
 }

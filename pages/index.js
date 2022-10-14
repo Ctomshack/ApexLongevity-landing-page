@@ -18,27 +18,10 @@ export default function Home() {
       <Head>
         <title>Apex Longevity</title>
         <meta name="description" content="Apex Longevity - Discount Medical Plan Organization" />
-        <link rel="icon" href="/apexlogo.png" />
+        <link rel="icon" href="../apexlogo.png" />
       </Head>
 
       <div>
-        {/* <nav className="block p-4">
-          <div className="flex items-center justify-between">
-            <Link href="/">
-            <div className="logo">Logo</div>
-            </Link>
-            <div className="flex justify-around">
-              <div className="navItem">Page One</div>
-              <div className="navItem">The Sequel</div>
-              <div className="navItem">Three Makes a Trilogy</div>
-              <div className="navItem">Four is Excessive</div>
-              <div></div>
-            </div>
-          </div>
-        </nav> */}
-        {/* --- nav --- */}
-
-
         <Header />
         <Benefits1 />
         <TrustedBy />
