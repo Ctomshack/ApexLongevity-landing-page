@@ -24,7 +24,7 @@ export default function ContactUs() {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_Gmail', 'template_rzzc2xu', form.current, 'KveSNaQtaqd1cdVHa')
+    emailjs.sendForm('service_emnd3ej', 'template_rn4dbyp', form.current, '2SNUerfRdY2TlEpcU')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
