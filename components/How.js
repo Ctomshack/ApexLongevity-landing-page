@@ -20,16 +20,16 @@ export default function How() {
               <span className="text-gray-900">Become an Apex Longevity Provider for </span>
               <span className="text-apexB"> Free</span>
             </h1>
-            <p className="mt-5 text-xl text-gray-500">
-              Includes every feature we offer plus unlimited member enrollments,
+            <p className="mt-5 text-xl text-gray-500 lg:w-3/4">
+              Includes every feature we offer within a personalized Apex Longevity dashboard, free marketing brochures, free new patients marketing, unlimited member enrollments, 1-on-1 training, and lifetime customer support
             </p>
-            <p className="text-xl text-gray-500 ">
+            {/* <p className="text-xl text-gray-500 ">
               1-on-1 training, and lifetime customer support
-            </p>
+            </p> */}
           </div>
           <a
             href="#ContactUs"
-            className="inline-flex items-center justify-center w-full px-5 py-3 mt-8 text-base font-medium text-white duration-300 border border-transparent rounded-md bg-apexB hover:bg-apexG sm:mt-10 sm:w-auto xl:mt-0"
+            className="inline-flex items-center justify-center w-auto px-5 py-3 mt-8 text-base font-medium text-white duration-300 border border-transparent rounded-md bg-apexB hover:bg-apexG sm:mt-10 sm:w-auto xl:mt-0"
           >
             Get started today
           </a>
@@ -38,8 +38,8 @@ export default function How() {
           <div>
             <h2 className="text-lg font-semibold text-apexB">Everything you need</h2>
             <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900">All-in-one platform</p>
-            <p className="mt-4 text-lg text-gray-500">
-              Access your admin dashboard to enroll and update patient memberships, lifetime customer support, and free training to ensure your staff is well-equipped for success with Apex Longevity.
+            <p className="mt-4 text-lg text-gray-500 lg:w-3/4">
+              Access your admin dashboard to enroll and manage patient memberships, receive lifetime customer support, and free training to ensure your staff is well-equipped for success with Apex Longevity.
             </p>
           </div>
           <div className="mt-4 sm:mt-8 md:mt-10 md:grid md:grid-cols-1 md:gap-x-8 xl:col-span-1 xl:mt-0">

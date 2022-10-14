@@ -9,3 +9,4 @@ export { default as Header } from './Header';
 export { default as Header2 } from './Header2';
 export { default as How } from './How';
 export { default as TrustedBy } from './TrustedBy';
+export { default as SuccessMessage } from './SuccessMessage';

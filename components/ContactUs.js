@@ -13,11 +13,25 @@
   ```
 */
 import { EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline';
+import { CheckCircleIcon, XMarkIcon } from '@heroicons/react/20/solid'
 import React from 'react';
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
+import SuccessMessage from './SuccessMessage';
 
 export default function ContactUs() {
+
+  const [showSuccessMessage, setShowSuccessMessage] = useState(false);
+  const [formData, setFormData] = useState({fullName: '', email: '', phone: '', message: ''})
+
+  const clearForm = () => {
+    setFormData({fullName: '', email: '', phone: '', message: ''})
+  }
+
+//   const handleChange = (e) => {
+//     setFormData({ ...formData,
+//       [e.target.name] : e.target.value, })
+// }
 
   const form = useRef();
 
@@ -26,6 +40,11 @@ export default function ContactUs() {
 
     emailjs.sendForm('service_emnd3ej', 'template_rn4dbyp', form.current, '2SNUerfRdY2TlEpcU')
       .then((result) => {
+        // clearForm();
+        setShowSuccessMessage(true);
+          setTimeout(() => {
+            setShowSuccessMessage(false);
+          }, 5000);
           console.log(result.text);
       }, (error) => {
           console.log(error.text);
@@ -147,8 +166,21 @@ export default function ContactUs() {
                 >
                   Submit
                 </button>
+
+
+
+
+
+
+
+
+
+
               </div>
             </form>
+                {showSuccessMessage && (
+          <SuccessMessage />
+        )}
           </div>
         </div>
       </div>

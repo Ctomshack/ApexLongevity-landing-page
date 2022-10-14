@@ -44,7 +44,7 @@ export default function Benefits2() {
         <div className="relative px-4 py-24 mx-auto max-w-7xl sm:py-32 sm:px-6 lg:px-8">
           <h1 className="text-4xl font-bold tracking-tight text-white md:text-5xl lg:text-6xl">Good News!</h1>
           <p className="max-w-3xl mt-6 text-xl text-gray-300">
-            You can now give your patients legal cash discounts without placing your practice or your license in jeapardy of violating state / federal laws regarding dual fee schedules
+            You can now give your patients legal cash discounts without placing your practice or your license in risk of violating state / federal laws regarding dual fee schedules
           </p>
         </div>
       </div>

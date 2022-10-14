@@ -71,7 +71,7 @@ export default function Header() {
               <span className="block xl:inline">To Your Patients</span>
             </h1>
             <p className="max-w-md mx-auto mt-3 text-lg text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl">
-              More cash paying patients. Fewer to no insurance patients. FREE digital marketing to attract new patients every month!
+              More cash paying patients. Compliant cash discounts. FREE digital marketing to attract new patients every month!
             </p>
             <div className="mt-10 sm:flex sm:justify-center lg:justify-start">
               <div className="rounded-md shadow">

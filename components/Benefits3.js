@@ -28,7 +28,7 @@ import {
       id: 3,
       name: 'FREE Marketing for New Patients',
       description:
-        'Receive free online and social media mrketing every month that you can utilize to attract more new patients to your clinic',
+        'Receive free online and social media marketing every month that you can utilize to attract more new patients to your clinic',
       icon: GlobeAltIcon,
     },
     {
@@ -42,7 +42,7 @@ import {
         id: 5,
         name: 'Cash Fee Schedule',
         description:
-          `Create your own 'cash fee schedule' within your clinic's personalized Apex Longevity CMS to eliminate many legal and regulatory violations you can otherwise encounter`,
+          `Create your own 'cash fee schedule' to eliminate many legal and regulatory violations you can otherwise encounter`,
         icon: NewspaperIcon,
       },
   ]

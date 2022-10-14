@@ -72,7 +72,7 @@ const stats = [
                     </div>
   
                     <footer className="mt-4">
-                      <p className="text-base font-semibold text-indigo-200">Dr. Stewart Fresh, HealthSource of Huntsville Providence</p>
+                      <p className="text-base font-semibold text-indigo-200">Dr. Stewart Fresh, HealthSource of Covington</p>
                     </footer>
                   </blockquote>
                 </div>
@@ -99,7 +99,7 @@ const stats = [
               </div>
             </div>
               <div className="mt-10">
-                <a href="#LearnMore" className="text-base font-medium text-apexB">
+                <a href="#LearnMore" className="text-base font-medium duration-300 text-apexB hover:text-apexG">
                   {`Learn more about how we're making chiropractic care more accessible`}
                   <span aria-hidden="true"> &rarr;</span>
                 </a>
