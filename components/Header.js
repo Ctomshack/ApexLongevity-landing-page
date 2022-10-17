@@ -100,7 +100,7 @@ export default function Header() {
             alt=""
           /> */}
           <Image
-          src='/header1image.jpeg'
+          src='/header1image_.jpeg'
           alt='Apex Longevity Header Image' 
           layout='fill'
           objectFit='cover'
