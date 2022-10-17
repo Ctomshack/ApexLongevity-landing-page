@@ -97,7 +97,7 @@ export default function ContactUs() {
                     className="flex-shrink-0 w-6 h-6 text-gray-400"
                     aria-hidden="true"
                   />
-                  <span className="ml-3">+1 (877) 712-2739</span>
+                  <a href="tel:+18777122739"><span className="ml-3 hover:text-apexG">+1 (877) 712-2739</span></a>
                 </dd>
               </div>
               <div className="mt-3">
